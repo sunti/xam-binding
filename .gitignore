@@ -6,3 +6,4 @@ DependencyServiceDemos/bin/*
 DependencyServiceDemos/obj/*
 iOSBinding.iOS/bin/*
 iOSBinding.iOS/obj/*
+.vs/*
