@@ -1,0 +1,8 @@
+DependencyServiceDemos.iOS/bin/*
+DependencyServiceDemos.iOS/obj/*
+DependencyServiceDemos.Android/bin/*
+DependencyServiceDemos.Android/obj/*
+DependencyServiceDemos/bin/*
+DependencyServiceDemos/obj/*
+iOSBinding.iOS/bin/*
+iOSBinding.iOS/obj/*

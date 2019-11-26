@@ -1,0 +1,55 @@
+﻿<Properties StartupConfiguration="{7C4B3599-A779-47B4-9238-3CAA42F119DA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DependencyServiceDemos.iOS/Resources/main.jsbundle">
+    <Files>
+      <File FileName="DependencyServiceDemos.iOS/RNViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="DependencyServiceDemos.iOS/Main.cs" />
+      <File FileName="DependencyServiceDemos.iOS/Services/DeviceOrientationService.cs" />
+      <File FileName="DependencyServiceDemos.iOS/RNViewController.xib" />
+      <File FileName="DependencyServiceDemos.iOS/RNViewController.cs" />
+      <File FileName="DependencyServiceDemos.iOS/Services/OpenPageService.cs" />
+      <File FileName="../../../../Library/Frameworks/Xamarin.iOS.framework/Versions/13.6.0.12/src/Xamarin.iOS/ObjCRuntime/Runtime.cs" />
+      <File FileName="DependencyServiceDemos/Services/IOpenPage.cs" />
+      <File FileName="DependencyServiceDemos.iOS/AppDelegate.cs" />
+      <File FileName="DependencyServiceDemos.iOS/Resources/libPods-xxxx.a" />
+      <File FileName="iOSBinding/Structs.cs" />
+      <File FileName="iOSBinding/ApiDefinition.cs" />
+      <File FileName="iOSBinding/libPods-xxxx.a" />
+      <File FileName="iOSBinding/libPods-xxxx.linkwith.cs" />
+      <File FileName="iOSBinding/Yoga/libYoga.linkwith.cs" />
+      <File FileName="DependencyServiceDemos/MainPage.xaml.cs" />
+      <File FileName="iOSBinding/React-cxxreact/libReact-cxxreact.linkwith.cs" />
+      <File FileName="iOSBinding/Properties/AssemblyInfo.cs" />
+      <File FileName="iOSBinding/Yoga/libYoga.a" />
+      <File FileName="DependencyServiceDemos.iOS/Resources/main.jsbundle" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DependencyServiceDemos" expanded="True">
+            <Node name="DependencyServiceDemos" expanded="True">
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+            <Node name="DependencyServiceDemos.iOS" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="main.jsbundle" selected="True" />
+              </Node>
+              <Node name="Services" expanded="True" />
+              <Node name="RNViewController.cs" expanded="True" />
+            </Node>
+            <Node name="iOSBinding" expanded="True">
+              <Node name="libPods-xxxx.a" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.DependencyServiceDemos.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F3190697-58AD-456C-8A75-06F942F967E6" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.DependencyServiceDemos.Android PreferredExecutionTarget="Android.Pixel" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

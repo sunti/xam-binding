@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{8FFB629D-F513-41CE-95D2-7ECE97B6EEEC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{E65D0713-A625-407D-90D1-2F9A53EF34DD}</ProjectGuid>
+    <TemplateGuid>{b6f3ff35-79b2-4f25-a2fc-60a7cf61013b}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NativeLibrary</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>NativeLibrary</AssemblyName>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="libPods-xxxx.linkwith.cs">
+      <DependentUpon>libPods-xxxx.a</DependentUpon>
+    </Compile>
+    <Compile Include="React-RCTBlob\libReact-RCTBlob.linkwith.cs">
+      <DependentUpon>libReact-RCTBlob.a</DependentUpon>
+    </Compile>
+    <Compile Include="RCTTypeSafety\libRCTTypeSafety.linkwith.cs">
+      <DependentUpon>libRCTTypeSafety.a</DependentUpon>
+    </Compile>
+    <Compile Include="DoubleConversion\libDoubleConversion.linkwith.cs">
+      <DependentUpon>libDoubleConversion.a</DependentUpon>
+    </Compile>
+    <Compile Include="React-RCTImage\libReact-RCTImage.linkwith.cs">
+      <DependentUpon>libReact-RCTImage.a</DependentUpon>
+    </Compile>
+    <Compile Include="React-RCTText\libReact-RCTText.linkwith.cs">
+      <DependentUpon>libReact-RCTText.a</DependentUpon>
+    </Compile>
+    <Compile Include="Yoga\libYoga.linkwith.cs">
+      <DependentUpon>libYoga.a</DependentUpon>
+    </Compile>
+    <Compile Include="React-Core\libReact-Core.linkwith.cs">
+      <DependentUpon>libReact-Core.a</DependentUpon>
+    </Compile>
+    <Compile Include="ReactCommon\libReactCommon.linkwith.cs">
+      <DependentUpon>libReactCommon.a</DependentUpon>
+    </Compile>
+    <Compile Include="React-jsi\libReact-jsi.linkwith.cs">
+      <DependentUpon>libReact-jsi.a</DependentUpon>
+    </Compile>
+    <Compile Include="glog\libglog.linkwith.cs">
+      <DependentUpon>libglog.a</DependentUpon>
+    </Compile>
+    <Compile Include="React-RCTNetwork\libReact-RCTNetwork.linkwith.cs">
+      <DependentUpon>libReact-RCTNetwork.a</DependentUpon>
+    </Compile>
+    <Compile Include="React-cxxreact\libReact-cxxreact.linkwith.cs">
+      <DependentUpon>libReact-cxxreact.a</DependentUpon>
+    </Compile>
+    <Compile Include="FBReactNativeSpec\libFBReactNativeSpec.linkwith.cs">
+      <DependentUpon>libFBReactNativeSpec.a</DependentUpon>
+    </Compile>
+    <Compile Include="React-RCTVibration\libReact-RCTVibration.linkwith.cs">
+      <DependentUpon>libReact-RCTVibration.a</DependentUpon>
+    </Compile>
+    <Compile Include="React-RCTAnimation\libReact-RCTAnimation.linkwith.cs">
+      <DependentUpon>libReact-RCTAnimation.a</DependentUpon>
+    </Compile>
+    <Compile Include="React-RCTLinking\libReact-RCTLinking.linkwith.cs">
+      <DependentUpon>libReact-RCTLinking.a</DependentUpon>
+    </Compile>
+    <Compile Include="React-RCTActionSheet\libReact-RCTActionSheet.linkwith.cs">
+      <DependentUpon>libReact-RCTActionSheet.a</DependentUpon>
+    </Compile>
+    <Compile Include="React-jsinspector\libReact-jsinspector.linkwith.cs">
+      <DependentUpon>libReact-jsinspector.a</DependentUpon>
+    </Compile>
+    <Compile Include="React-jsiexecutor\libReact-jsiexecutor.linkwith.cs">
+      <DependentUpon>libReact-jsiexecutor.a</DependentUpon>
+    </Compile>
+    <Compile Include="React-RCTSettings\libReact-RCTSettings.linkwith.cs">
+      <DependentUpon>libReact-RCTSettings.a</DependentUpon>
+    </Compile>
+    <Compile Include="Folly\libFolly.linkwith.cs">
+      <DependentUpon>libFolly.a</DependentUpon>
+    </Compile>
+    <Compile Include="React-CoreModules\libReact-CoreModules.linkwith.cs">
+      <DependentUpon>libReact-CoreModules.a</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingCoreSource Include="Structs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingNativeLibrary Include="libPods-xxxx.a" />
+    <ObjcBindingNativeLibrary Include="React-RCTBlob\libReact-RCTBlob.a" />
+    <ObjcBindingNativeLibrary Include="RCTTypeSafety\libRCTTypeSafety.a" />
+    <ObjcBindingNativeLibrary Include="DoubleConversion\libDoubleConversion.a" />
+    <ObjcBindingNativeLibrary Include="React-RCTImage\libReact-RCTImage.a" />
+    <ObjcBindingNativeLibrary Include="React-RCTText\libReact-RCTText.a" />
+    <ObjcBindingNativeLibrary Include="Yoga\libYoga.a" />
+    <ObjcBindingNativeLibrary Include="React-Core\libReact-Core.a" />
+    <ObjcBindingNativeLibrary Include="ReactCommon\libReactCommon.a" />
+    <ObjcBindingNativeLibrary Include="React-jsi\libReact-jsi.a" />
+    <ObjcBindingNativeLibrary Include="glog\libglog.a" />
+    <ObjcBindingNativeLibrary Include="React-RCTNetwork\libReact-RCTNetwork.a" />
+    <ObjcBindingNativeLibrary Include="React-cxxreact\libReact-cxxreact.a" />
+    <ObjcBindingNativeLibrary Include="FBReactNativeSpec\libFBReactNativeSpec.a" />
+    <ObjcBindingNativeLibrary Include="React-RCTVibration\libReact-RCTVibration.a" />
+    <ObjcBindingNativeLibrary Include="React-RCTAnimation\libReact-RCTAnimation.a" />
+    <ObjcBindingNativeLibrary Include="React-RCTLinking\libReact-RCTLinking.a" />
+    <ObjcBindingNativeLibrary Include="React-RCTActionSheet\libReact-RCTActionSheet.a" />
+    <ObjcBindingNativeLibrary Include="React-jsinspector\libReact-jsinspector.a" />
+    <ObjcBindingNativeLibrary Include="React-jsiexecutor\libReact-jsiexecutor.a" />
+    <ObjcBindingNativeLibrary Include="React-RCTSettings\libReact-RCTSettings.a" />
+    <ObjcBindingNativeLibrary Include="Folly\libFolly.a" />
+    <ObjcBindingNativeLibrary Include="React-CoreModules\libReact-CoreModules.a" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
+</Project>
