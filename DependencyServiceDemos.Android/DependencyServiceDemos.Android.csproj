@@ -49,12 +49,12 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="NativeLibrary">
+      <HintPath>..\iOSBinding\bin\Debug\NativeLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.991211" />
-    <PackageReference Include="ReactNative.Droid">
-      <Version>1.0.55</Version>
-    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -87,6 +87,10 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\drawable\monkeyicon.png" />
+    <AndroidResource Include="Resources\values\strings.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />
@@ -99,6 +103,13 @@
       <Project>{E3EFC9E0-263C-404F-BCE1-64D72EC840D8}</Project>
       <Name>DependencyServiceDemos</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AndroidBinding\AndroidBinding.csproj">
+      <Project>{E06D2767-73A5-4496-86C5-8FF586C94655}</Project>
+      <Name>AndroidBinding</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\index.android.bundle" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
