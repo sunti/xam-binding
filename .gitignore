@@ -4,6 +4,8 @@ DependencyServiceDemos.Android/bin/*
 DependencyServiceDemos.Android/obj/*
 DependencyServiceDemos/bin/*
 DependencyServiceDemos/obj/*
-iOSBinding.iOS/bin/*
-iOSBinding.iOS/obj/*
+iOSBinding/bin/*
+iOSBinding/obj/*
+AndroidBinding/bin/*
+AndroidBinding/obj/*
 .vs

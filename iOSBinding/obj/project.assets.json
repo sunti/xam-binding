@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sunti/Desktop/rnToXamarin/iOSBinding/iOSBinding.csproj",
+      "projectUniqueName": "/Users/sunti/Desktop/xamBinding/iOSBinding/iOSBinding.csproj",
       "projectName": "NativeLibrary",
-      "projectPath": "/Users/sunti/Desktop/rnToXamarin/iOSBinding/iOSBinding.csproj",
+      "projectPath": "/Users/sunti/Desktop/xamBinding/iOSBinding/iOSBinding.csproj",
       "packagesPath": "/Users/sunti/.nuget/packages/",
-      "outputPath": "/Users/sunti/Desktop/rnToXamarin/iOSBinding/obj/",
+      "outputPath": "/Users/sunti/Desktop/xamBinding/iOSBinding/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
