@@ -75,6 +75,7 @@
     </Compile>
     <Compile Include="Services\OpenPageService.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="KSAMOnboardModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -132,9 +133,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.991211" />
-    <PackageReference Include="ReactNative.iOS">
-      <Version>1.0.55</Version>
-    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>

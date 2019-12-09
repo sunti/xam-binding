@@ -1,6 +1,5 @@
 ﻿using System;
 using Foundation;
-//using ReactNative.iOS;
 using ReactNativeIOS;
 using UIKit;
 
@@ -16,6 +15,8 @@ namespace DependencyServiceDemos.iOS
 
             var url = NSBundle.MainBundle.GetUrlForResource("main", "jsbundle");
             //var url = NSUrl.FromString("http://localhost:8081/index.bundle?platform=ios");
+
+            CFunctions.RCTRegisterModule(ObjCRuntime.Class.GetHandle(typeof(KSAMOnboardModule)));
 
             RCTRootView rootView = new RCTRootView(url, new NSString("xxxx"), props, options);
             base.View = rootView;

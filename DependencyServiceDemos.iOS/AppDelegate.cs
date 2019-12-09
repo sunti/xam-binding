@@ -1,6 +1,7 @@
 ﻿using Foundation;
 using UIKit;
 using Xamarin.Forms;
+using ReactNativeIOS;
 
 namespace DependencyServiceDemos.iOS
 {
