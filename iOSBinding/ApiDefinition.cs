@@ -48,6 +48,9 @@ namespace ReactNativeIOS
         [Export("getUserToken:")]
         void GetUserToken(RCTResponseSenderBlock callback);
 
+        [Export("finishActivity")]
+        void FinishActivity();
+
     }
     // typedef void (^RCTResponseSenderBlock)(NSArray *);
     public delegate void RCTResponseSenderBlock(NSObject[] response);

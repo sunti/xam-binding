@@ -5,10 +5,10 @@ using UIKit;
 
 namespace DependencyServiceDemos.iOS
 {
-    public partial class RNViewController : UIViewController
+    public partial class KSAMOnboardViewController : UIViewController
     {
 
-        public RNViewController() : base("RNViewController", null)
+        public KSAMOnboardViewController() : base("KSAMOnboardViewController", null)
         {
             var props = new NSDictionary();
             var options = new NSDictionary();

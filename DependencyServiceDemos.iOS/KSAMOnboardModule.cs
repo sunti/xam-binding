@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 
 using Foundation;
-using UIKit;
 using ReactNativeIOS;
 using System.Runtime.InteropServices;
 
@@ -38,6 +37,28 @@ namespace DependencyServiceDemos.iOS
             {
                 jsName = string.Empty,
                 objcName = "getUserToken:(RCTResponseSenderBlock)callback",
+                isSync = false
+            };
+            
+            var ptr = Marshal.AllocHGlobal(Marshal.SizeOf(method));
+            Marshal.StructureToPtr(method, ptr, false);
+
+            return ptr;
+        }
+
+        [Export("finishActivity")]
+        public override void FinishActivity()
+        {
+            //CloseModule();
+        }
+
+        [Export("__rct_export__finishActivity")]
+        public static IntPtr FinishActivityExport()
+        {
+            var method = new RCTMethodInfo()
+            {
+                jsName = string.Empty,
+                objcName = "finishActivity",
                 isSync = false
             };
 
