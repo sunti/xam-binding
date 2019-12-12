@@ -49,9 +49,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors" />
-    <Reference Include="NativeLibrary">
-      <HintPath>..\iOSBinding\bin\Debug\NativeLibrary.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.991211" />
