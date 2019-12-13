@@ -11,8 +11,8 @@ using UIKit;
 
 namespace DependencyServiceDemos.iOS
 {
-    [Register("RNViewController")]
-    partial class RNViewController
+    [Register("KSAMOnboardViewController")]
+    partial class KSAMOnboardViewController
     {
         void ReleaseDesignerOutlets()
         {

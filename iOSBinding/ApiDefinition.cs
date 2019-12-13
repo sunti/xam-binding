@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Runtime.InteropServices;
+
 using ObjCRuntime;
 using Foundation;
 using UIKit;
@@ -13,64 +15,80 @@ namespace ReactNativeIOS
         IntPtr Constructor(NSUrl bundleUrl, NSString moduleName, NSDictionary initialProperties, NSDictionary launchOptions);
     }
 
-    //[Export("getUserToken:")]
-    //void RCT_EXPORT_METHOD(RCTResponseSenderBlock callback);
 
-    // The first step to creating a binding is to add your native library ("libNativeLibrary.a")
-    // to the project by right-clicking (or Control-clicking) the folder containing this source
-    // file and clicking "Add files..." and then simply select the native library (or libraries)
-    // that you want to bind.
-    //
-    // When you do that, you'll notice that MonoDevelop generates a code-behind file for each
-    // native library which will contain a [LinkWith] attribute. VisualStudio auto-detects the
-    // architectures that the native library supports and fills in that information for you,
-    // however, it cannot auto-detect any Frameworks or other system libraries that the
-    // native library may depend on, so you'll need to fill in that information yourself.
-    //
-    // Once you've done that, you're ready to move on to binding the API...
-    //
-    //
-    // Here is where you'd define your API definition for the native Objective-C library.
-    //
-    // For example, to bind the following Objective-C class:
-    //
-    //     @interface Widget : NSObject {
-    //     }
-    //
-    // The C# binding would look like this:
-    //
-    //     [BaseType (typeof (NSObject))]
-    //     interface Widget {
-    //     }
-    //
-    // To bind Objective-C properties, such as:
-    //
-    //     @property (nonatomic, readwrite, assign) CGPoint center;
-    //
-    // You would add a property definition in the C# interface like so:
-    //
-    //     [Export ("center")]
-    //     CGPoint Center { get; set; }
-    //
-    // To bind an Objective-C method, such as:
-    //
-    //     -(void) doSomething:(NSObject *)object atIndex:(NSInteger)index;
-    //
-    // You would add a method definition to the C# interface like so:
-    //
-    //     [Export ("doSomething:atIndex:")]
-    //     void DoSomething (NSObject object, int index);
-    //
-    // Objective-C "constructors" such as:
-    //
-    //     -(id)initWithElmo:(ElmoMuppet *)elmo;
-    //
-    // Can be bound as:
-    //
-    //     [Export ("initWithElmo:")]
-    //     IntPtr Constructor (ElmoMuppet elmo);
-    //
-    // For more information, see https://aka.ms/ios-binding
-    //
+
+    [BaseType(typeof(NSObject))]
+    interface RCTBundleURLProvider
+    {
+        // +(instancetype)sharedSettings;
+        [Static]
+        [Export("sharedSettings")]
+        RCTBundleURLProvider SharedSettings();
+
+        // -(NSURL *)jsBundleURLForBundleRoot:(NSString *)bundleRoot fallbackResource:(NSString *)resourceName;
+        [Export("jsBundleURLForBundleRoot:fallbackResource:")]
+        NSUrl JsBundleURLForBundleRoot(string bundleRoot, [NullAllowed] string resourceName);
+    }
+
+
+    // @protocol RCTBridgeModule <NSObject>
+    [Protocol, Model]
+    [BaseType(typeof(NSObject))]
+    interface RCTBridgeModule
+    {
+        /* These are placeholders for functions with block parameters exported from implementation modules.
+         * Required in order to generate the corresponding block conversions and to avoid an exception.
+         * Actual module should override this function with the implementation. */
+        //[Export("addOne::")]
+        //void AddOne(int x, RCTResponseSenderBlock response);
+
+        //[Export("square::rejecter:")]
+        //void Square(int x, RCTPromiseResolveBlock resolve, RCTPromiseRejectBlock reject);
+
+        [Export("getUserToken:")]
+        void GetUserToken(RCTResponseSenderBlock callback);
+
+        [Export("finishActivity")]
+        void FinishActivity();
+
+    }
+    // typedef void (^RCTResponseSenderBlock)(NSArray *);
+    public delegate void RCTResponseSenderBlock(NSObject[] response);
+
+    // typedef void (^RCTResponseErrorBlock)(NSError *);
+    public delegate void RCTResponseErrorBlock(NSError error);
+
+    // typedef void (^RCTPromiseResolveBlock)(id);
+    public delegate void RCTPromiseResolveBlock(NSObject result);
+
+    // typedef void (^RCTPromiseRejectBlock)(NSString *, NSString *, NSError *);
+    public delegate void RCTPromiseRejectBlock(string code, string message, NSError error);
+
+
+
+    // @interface RCTEventEmitter : NSObject<RCTBridgeModule>
+    [BaseType(typeof(NSObject))]
+    interface RCTEventEmitter : RCTBridgeModule
+    {
+        [Export("sendEventWithName:body:")]
+        void SendEventWithName(string name, NSObject body);
+
+        // -(void)startObserving;
+        [Export("startObserving")]
+        void StartObserving();
+
+        // -(void)stopObserving;
+        [Export("stopObserving")]
+        void StopObserving();
+
+        // -(void)addListener:(NSString *)eventName;
+        [Export("addListener:")]
+        void AddListener(string eventName);
+
+        // -(void)removeListeners:(double)count;
+        [Export("removeListeners:")]
+        void RemoveListeners(double count);
+    }
+    
 }
 
