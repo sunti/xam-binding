@@ -1,21 +1,22 @@
 ﻿using System;
 using Foundation;
-//using ReactNative.iOS;
 using ReactNativeIOS;
 using UIKit;
 
 namespace DependencyServiceDemos.iOS
 {
-    public partial class RNViewController : UIViewController
+    public partial class KSAMOnboardViewController : UIViewController
     {
 
-        public RNViewController() : base("RNViewController", null)
+        public KSAMOnboardViewController() : base("KSAMOnboardViewController", null)
         {
             var props = new NSDictionary();
             var options = new NSDictionary();
 
             var url = NSBundle.MainBundle.GetUrlForResource("main", "jsbundle");
             //var url = NSUrl.FromString("http://localhost:8081/index.bundle?platform=ios");
+
+            CFunctions.RCTRegisterModule(ObjCRuntime.Class.GetHandle(typeof(KSAMOnboardModule)));
 
             RCTRootView rootView = new RCTRootView(url, new NSString("xxxx"), props, options);
             base.View = rootView;
