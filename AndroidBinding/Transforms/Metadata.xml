@@ -1,21 +1,77 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-   <!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
      <!-- Remove 3rd parties from binding -->
     
     <remove-node path="/api/package[@name='javax.inject']" />
-    <remove-node path="/api/package[contains(@name, 'javax.annotation')]" />
+<!--    <remove-node path="/api/package[contains(@name, 'javax.annotation')]" />-->
 
-    <!-- Okio -->
-     <remove-node path="/api/package[@name='okio']" /> 
      <remove-node path="/api/package[@name='androidx.collection']/class[@name='ArrayMap']" />
-     
     
     
-    </metadata>
+    
+ <remove-node path="/api/package[@name='com.facebook.react.uimanager']/class[@name='ReactShadowNodeImpl']"/>
+ <remove-node path="/api/package[@name='com.facebook.react.uimanager']/class[@name='ViewManagerPropertyUpdater']/method[@name='updateProps' and count(parameter)=3 and parameter[1][@type='T'] and parameter[2][@type='V'] and parameter[3][@type='com.facebook.react.uimanager.ReactStylesDiffMap']]"/>
+ <remove-node path="/api/package[@name='com.facebook.react.bridge']/class[@name='GuardedAsyncTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='Params...']]" />
+ 
+ <attr path="/api/package[@name='com.facebook.react.bridge']/class[@name='CatalystInstanceImpl']/method[@name='getJSCallInvokerHolder' and count(parameter)=0]" name="managedReturn">Com.Facebook.React.Turbomodule.Core.Interfaces.IJSCallInvokerHolder</attr>
+ 
+ <attr path="/api/package[@name='com.facebook.react.bridge']/class[@name='ReadableNativeMap']/method[@name='getMap' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedReturn">Com.Facebook.React.Bridge.IReadableMap</attr>
+ <attr path="/api/package[@name='com.facebook.react.bridge']/class[@name='ReadableNativeMap']/method[@name='getArray' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedReturn">Com.Facebook.React.Bridge.IReadableArray</attr>
+ 
+ <attr path="/api/package[@name='com.facebook.react.bridge']/class[@name='ReadableNativeArray']/method[@name='getMap' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Facebook.React.Bridge.IReadableMap</attr>
+ <attr path="/api/package[@name='com.facebook.react.bridge']/class[@name='ReadableNativeArray']/method[@name='getArray' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Facebook.React.Bridge.IReadableArray</attr>
+ 
+ <attr path="/api/package[@name='com.facebook.react.bridge']/class[@name='WritableNativeArray']/method[@name='getMap' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Facebook.React.Bridge.IReadableMap</attr>
+ <attr path="/api/package[@name='com.facebook.react.bridge']/class[@name='WritableNativeArray']/method[@name='getArray' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Facebook.React.Bridge.IReadableArray</attr>
+ 
+ <add-node path="/api/package[@name='com.facebook.yoga']">
+ <class abstract="false" deprecated="not deprecated" final="false" name="YogaNodeJNIFinalizer" static="true" visibility="public" extends="java.lang.Object"></class>
+ <class abstract="false" deprecated="not deprecated" final="false" name="YogaNodeJNIPhantomRefs" static="true" visibility="public" extends="java.lang.Object"></class>
+ <class abstract="false" deprecated="not deprecated" final="false" name="YogaNodeJNIBase" static="true" visibility="public" extends="java.lang.Object"></class>
+ </add-node>
+ 
+ <add-node path="/api/package[@name='com.facebook.react.views.textinput']">
+ <class abstract="false" deprecated="not deprecated" final="false" name="ReactTextInputManager" static="true" visibility="public" extends="java.lang.Object"></class>
+ </add-node>
+ 
+ <add-node path="/api/package[@name='com.facebook.react.views.view']">
+ <class abstract="false" deprecated="not deprecated" final="false" name="ReactViewManager" static="true" visibility="public" extends="java.lang.Object"></class>
+ </add-node>
+ 
+ <add-node path="/api/package[@name='com.facebook.react.views.scroll']">
+ <class abstract="false" deprecated="not deprecated" final="false" name="ReactScrollViewManager" static="true" visibility="public" extends="java.lang.Object"></class>
+ <class abstract="false" deprecated="not deprecated" final="false" name="ReactHorizontalScrollViewManager" static="true" visibility="public" extends="java.lang.Object"></class>
+ <class abstract="false" deprecated="not deprecated" final="false" name="ReactHorizontalScrollContainerViewManager" static="true" visibility="public" extends="java.lang.Object"></class>
+ </add-node>
+ 
+ <add-node path="/api/package[@name='com.facebook.react.views.modal']">
+ <class abstract="false" deprecated="not deprecated" final="false" name="ReactModalHostManager" static="true" visibility="public" extends="java.lang.Object"></class>
+ </add-node>
+ 
+ <add-node path="/api/package[@name='com.facebook.react.modules.network']">
+ <class abstract="false" deprecated="not deprecated" final="false" name="ForwardingCookieHandler" static="true" visibility="public" extends="java.lang.Object"></class>
+ </add-node>
+ 
+ <add-node path="/api/package[@name='com.facebook.react.views.text']">
+ <class abstract="false" deprecated="not deprecated" final="false" name="ReactVirtualTextViewManager" static="true" visibility="public" extends="java.lang.Object"></class>
+ <class abstract="false" deprecated="not deprecated" final="false" name="ReactRawTextManager" static="true" visibility="public" extends="java.lang.Object"></class>
+ </add-node>
+ 
+ <add-node path="/api/package[@name='com.facebook.react.views.unimplementedview']">
+ <class abstract="false" deprecated="not deprecated" final="false" name="ReactUnimplementedViewManager" static="true" visibility="public" extends="java.lang.Object"></class>
+ </add-node>
+ 
+ <add-node path="/api/package[@name='com.facebook.react.views.text.frescosupport']">
+ <class abstract="false" deprecated="not deprecated" final="false" name="FrescoBasedReactTextInlineImageViewManager" static="true" visibility="public" extends="java.lang.Object"></class>
+ </add-node>
+ 
+ <add-node path="/api/package[@name='com.facebook.react.uimanager']">
+ <class abstract="false" deprecated="not deprecated" final="false" name="RootViewManager" static="true" visibility="public" extends="java.lang.Object"></class>
+ </add-node>
+ 
+ <add-node path="/api/package[@name='com.facebook.react.views.progressbar']">
+ <class abstract="false" deprecated="not deprecated" final="false" name="ReactProgressBarViewManager" static="true" visibility="public" extends="java.lang.Object"></class>
+ </add-node>
+ 
+    
+</metadata>

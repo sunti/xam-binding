@@ -47,12 +47,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Additions\ReactActivity.cs" />
     <Compile Include="Additions\ReactInstanceManager.cs" />
+    <Compile Include="Additions\DevInternalSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
-    <None Include="packages.config" />
-    <None Include="Jars\app-release-dex2jar.jar" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
@@ -65,126 +64,32 @@
     <Folder Include="_temp\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedNativeLibrary Include="Jni\armeabi-v7a\libnative-filters.so" />
-    <EmbeddedNativeLibrary Include="Jni\armeabi-v7a\libreactnativeblob.so" />
-    <EmbeddedNativeLibrary Include="Jni\armeabi-v7a\libnative-imagetranscoder.so" />
-    <EmbeddedNativeLibrary Include="Jni\armeabi-v7a\libjsc.so" />
-    <EmbeddedNativeLibrary Include="Jni\armeabi-v7a\libjsijniprofiler.so" />
-    <EmbeddedNativeLibrary Include="Jni\armeabi-v7a\libjsinspector.so" />
-    <EmbeddedNativeLibrary Include="Jni\armeabi-v7a\libfolly_json.so" />
-    <EmbeddedNativeLibrary Include="Jni\armeabi-v7a\libglog.so" />
     <EmbeddedNativeLibrary Include="Jni\armeabi-v7a\libimagepipeline.so" />
-    <EmbeddedNativeLibrary Include="Jni\armeabi-v7a\libglog_init.so" />
-    <EmbeddedNativeLibrary Include="Jni\armeabi-v7a\libfolly_futures.so" />
-    <EmbeddedNativeLibrary Include="Jni\armeabi-v7a\libc++_shared.so" />
-    <EmbeddedNativeLibrary Include="Jni\armeabi-v7a\libfb.so" />
-    <EmbeddedNativeLibrary Include="Jni\armeabi-v7a\libjscexecutor.so" />
-    <EmbeddedNativeLibrary Include="Jni\armeabi-v7a\libreactnativejni.so" />
-    <EmbeddedNativeLibrary Include="Jni\armeabi-v7a\libyoga.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86\libnative-filters.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86\libreactnativeblob.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86\libnative-imagetranscoder.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86\libjsc.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86\libjsijniprofiler.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86\libjsinspector.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86\libfolly_json.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86\libglog.so" />
     <EmbeddedNativeLibrary Include="Jni\x86\libimagepipeline.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86\libglog_init.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86\libfolly_futures.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86\libc++_shared.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86\libfb.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86\libjscexecutor.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86\libreactnativejni.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86\libyoga.so" />
-    <EmbeddedNativeLibrary Include="Jni\arm64-v8a\libnative-filters.so" />
-    <EmbeddedNativeLibrary Include="Jni\arm64-v8a\libreactnativeblob.so" />
-    <EmbeddedNativeLibrary Include="Jni\arm64-v8a\libnative-imagetranscoder.so" />
-    <EmbeddedNativeLibrary Include="Jni\arm64-v8a\libjsc.so" />
-    <EmbeddedNativeLibrary Include="Jni\arm64-v8a\libjsijniprofiler.so" />
-    <EmbeddedNativeLibrary Include="Jni\arm64-v8a\libjsinspector.so" />
-    <EmbeddedNativeLibrary Include="Jni\arm64-v8a\libfolly_json.so" />
-    <EmbeddedNativeLibrary Include="Jni\arm64-v8a\libglog.so" />
     <EmbeddedNativeLibrary Include="Jni\arm64-v8a\libimagepipeline.so" />
-    <EmbeddedNativeLibrary Include="Jni\arm64-v8a\libglog_init.so" />
-    <EmbeddedNativeLibrary Include="Jni\arm64-v8a\libfolly_futures.so" />
-    <EmbeddedNativeLibrary Include="Jni\arm64-v8a\libc++_shared.so" />
-    <EmbeddedNativeLibrary Include="Jni\arm64-v8a\libfb.so" />
-    <EmbeddedNativeLibrary Include="Jni\arm64-v8a\libjscexecutor.so" />
-    <EmbeddedNativeLibrary Include="Jni\arm64-v8a\libreactnativejni.so" />
-    <EmbeddedNativeLibrary Include="Jni\arm64-v8a\libyoga.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86_64\libnative-filters.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86_64\libreactnativeblob.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86_64\libnative-imagetranscoder.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86_64\libjsc.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86_64\libjsijniprofiler.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86_64\libjsinspector.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86_64\libfolly_json.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86_64\libglog.so" />
     <EmbeddedNativeLibrary Include="Jni\x86_64\libimagepipeline.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86_64\libglog_init.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86_64\libfolly_futures.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86_64\libc++_shared.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86_64\libfb.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86_64\libjscexecutor.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86_64\libreactnativejni.so" />
-    <EmbeddedNativeLibrary Include="Jni\x86_64\libyoga.so" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\legacy-support-core-ui-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\core-1.0.1.aar" />
-    <LibraryProjectZip Include="Jars\drawerlayout-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\documentfile-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\vectordrawable-1.0.1.aar" />
-    <LibraryProjectZip Include="Jars\loader-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\slidingpanelayout-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\viewpager-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\soloader-0.6.0.aar" />
-    <LibraryProjectZip Include="Jars\coordinatorlayout-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\swiperefreshlayout-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\lifecycle-livedata-core-2.0.0.aar" />
-    <LibraryProjectZip Include="Jars\drawee-2.0.0.aar" />
-    <LibraryProjectZip Include="Jars\lifecycle-viewmodel-2.0.0.aar" />
-    <LibraryProjectZip Include="Jars\nativeimagefilters-2.0.0.aar" />
-    <LibraryProjectZip Include="Jars\print-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\fbcore-2.0.0.aar" />
-    <LibraryProjectZip Include="Jars\vectordrawable-animated-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\customview-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\imagepipeline-2.0.0.aar" />
-    <LibraryProjectZip Include="Jars\asynclayoutinflater-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\cursoradapter-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\imagepipeline-okhttp3-2.0.0.aar" />
-    <LibraryProjectZip Include="Jars\localbroadcastmanager-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\lifecycle-livedata-2.0.0.aar" />
-    <LibraryProjectZip Include="Jars\appcompat-1.0.2.aar" />
-    <LibraryProjectZip Include="Jars\lifecycle-runtime-2.0.0.aar" />
-    <LibraryProjectZip Include="Jars\imagepipeline-base-2.0.0.aar" />
-    <LibraryProjectZip Include="Jars\interpolator-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\versionedparcelable-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\nativeimagetranscoder-2.0.0.aar" />
-    <LibraryProjectZip Include="Jars\core-runtime-2.0.0.aar" />
-    <LibraryProjectZip Include="Jars\legacy-support-core-utils-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\fragment-1.0.0.aar" />
-    <LibraryProjectZip Include="Jars\fresco-2.0.0.aar" />
-    <LibraryProjectZip Include="Jars\react-native-0.61.4.aar" />
+    <LibraryProjectZip Include="..\node_modules\react-native\android\com\facebook\react\react-native\0.61.4\react-native-0.61.4.aar">
+      <Link>Jars\react-native-0.61.4.aar</Link>
+    </LibraryProjectZip>
     <LibraryProjectZip Include="Jars\android-jsc-r245459.aar" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedJar Include="Jars\lifecycle-common-2.0.0.jar" />
-    <EmbeddedJar Include="Jars\core-common-2.0.0.jar" />
-    <EmbeddedJar Include="Jars\infer-annotation-0.11.2.jar" />
-    <EmbeddedJar Include="Jars\okhttp-urlconnection-3.12.1.jar" />
-    <EmbeddedJar Include="Jars\annotation-1.0.0.jar" />
-    <EmbeddedJar Include="Jars\jsr305-3.0.2.jar" />
-    <EmbeddedJar Include="Jars\javax.inject-1.jar" />
-    <EmbeddedJar Include="Jars\collection-1.0.0.jar" />
-    <EmbeddedJar Include="Jars\okhttp-3.12.1.jar" />
-    <EmbeddedJar Include="Jars\okio-1.15.0.jar" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Square.OkIO">
       <Version>1.15.0</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedJar Include="Jars\annotation-1.0.0.jar" />
+    <EmbeddedJar Include="Jars\collection-1.0.0.jar" />
+    <EmbeddedJar Include="Jars\core-common-2.0.0.jar" />
+    <EmbeddedJar Include="Jars\infer-annotation-0.11.2.jar" />
+    <EmbeddedJar Include="Jars\javax.inject-1.jar" />
+    <EmbeddedJar Include="Jars\jsr305-3.0.2.jar" />
+    <EmbeddedJar Include="Jars\lifecycle-common-2.0.0.jar" />
+    <EmbeddedJar Include="Jars\okhttp-3.12.1.jar" />
+    <EmbeddedJar Include="Jars\okhttp-urlconnection-3.12.1.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

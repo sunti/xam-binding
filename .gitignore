@@ -9,3 +9,4 @@ iOSBinding/obj/*
 AndroidBinding/bin/*
 AndroidBinding/obj/*
 .vs
+node_modules/*
