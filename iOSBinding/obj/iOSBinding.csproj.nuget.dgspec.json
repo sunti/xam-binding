@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sunti/Desktop/xamBinding/iOSBinding/iOSBinding.csproj": {}
+    "/Users/suntisuramitmaitree/Desktop/xamBinding60/iOSBinding/iOSBinding.csproj": {}
   },
   "projects": {
-    "/Users/sunti/Desktop/xamBinding/iOSBinding/iOSBinding.csproj": {
+    "/Users/suntisuramitmaitree/Desktop/xamBinding60/iOSBinding/iOSBinding.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sunti/Desktop/xamBinding/iOSBinding/iOSBinding.csproj",
+        "projectUniqueName": "/Users/suntisuramitmaitree/Desktop/xamBinding60/iOSBinding/iOSBinding.csproj",
         "projectName": "NativeLibrary",
-        "projectPath": "/Users/sunti/Desktop/xamBinding/iOSBinding/iOSBinding.csproj",
-        "packagesPath": "/Users/sunti/.nuget/packages/",
-        "outputPath": "/Users/sunti/Desktop/xamBinding/iOSBinding/obj/",
+        "projectPath": "/Users/suntisuramitmaitree/Desktop/xamBinding60/iOSBinding/iOSBinding.csproj",
+        "packagesPath": "/Users/suntisuramitmaitree/.nuget/packages/",
+        "outputPath": "/Users/suntisuramitmaitree/Desktop/xamBinding60/iOSBinding/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "/Users/sunti/.config/NuGet/NuGet.Config"
+          "/Users/suntisuramitmaitree/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
