@@ -39,6 +39,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Yoga\libYoga.linkwith.cs">
+      <DependentUpon>libYoga.a</DependentUpon>
+    </Compile>
     <Compile Include="libPods-xxxx.linkwith.cs">
       <DependentUpon>libPods-xxxx.a</DependentUpon>
     </Compile>
@@ -56,9 +59,6 @@
     </Compile>
     <Compile Include="React-RCTText\libReact-RCTText.linkwith.cs">
       <DependentUpon>libReact-RCTText.a</DependentUpon>
-    </Compile>
-    <Compile Include="Yoga\libYoga.linkwith.cs">
-      <DependentUpon>libYoga.a</DependentUpon>
     </Compile>
     <Compile Include="React-Core\libReact-Core.linkwith.cs">
       <DependentUpon>libReact-Core.a</DependentUpon>
@@ -116,13 +116,13 @@
     <ObjcBindingCoreSource Include="Structs.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ObjcBindingNativeLibrary Include="Yoga\libYoga.a" />
     <ObjcBindingNativeLibrary Include="libPods-xxxx.a" />
     <ObjcBindingNativeLibrary Include="React-RCTBlob\libReact-RCTBlob.a" />
     <ObjcBindingNativeLibrary Include="RCTTypeSafety\libRCTTypeSafety.a" />
     <ObjcBindingNativeLibrary Include="DoubleConversion\libDoubleConversion.a" />
     <ObjcBindingNativeLibrary Include="React-RCTImage\libReact-RCTImage.a" />
     <ObjcBindingNativeLibrary Include="React-RCTText\libReact-RCTText.a" />
-    <ObjcBindingNativeLibrary Include="Yoga\libYoga.a" />
     <ObjcBindingNativeLibrary Include="React-Core\libReact-Core.a" />
     <ObjcBindingNativeLibrary Include="ReactCommon\libReactCommon.a" />
     <ObjcBindingNativeLibrary Include="React-jsi\libReact-jsi.a" />

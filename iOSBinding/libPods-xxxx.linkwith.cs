@@ -7,9 +7,10 @@
 
 using ObjCRuntime;
 
-[assembly: LinkWith ("libPods-xxxx.a",
+[assembly: LinkWith("libPods-xxxx.a",
     LinkTarget.ArmV7 | LinkTarget.Arm64 | LinkTarget.i386 | LinkTarget.x86_64,
     Frameworks = "JavaScriptCore",
     IsCxx = true,
     SmartLink = false,
     ForceLoad = true)]
+
