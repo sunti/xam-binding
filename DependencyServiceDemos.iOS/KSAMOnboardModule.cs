@@ -7,6 +7,8 @@ using Foundation;
 using ReactNativeIOS;
 using System.Runtime.InteropServices;
 
+using DependencyServiceDemos.iOS;
+
 namespace DependencyServiceDemos.iOS
 {
     public class KSAMOnboardModule : RCTBridgeModule
@@ -49,7 +51,8 @@ namespace DependencyServiceDemos.iOS
         [Export("finishActivity")]
         public override void FinishActivity()
         {
-            //CloseModule();
+            OpenPageService openPageService = new OpenPageService();
+            openPageService.ClosePage();
         }
 
         [Export("__rct_export__finishActivity")]

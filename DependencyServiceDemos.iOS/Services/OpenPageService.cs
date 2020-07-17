@@ -17,5 +17,10 @@ namespace DependencyServiceDemos.iOS
             UIApplication.SharedApplication.KeyWindow.RootViewController = new KSAMOnboardViewController();
         }
 
+        public void ClosePage()
+        {
+            //UIApplication.SharedApplication.KeyWindow.RootViewController = new KSAMOnboardViewController();
+            //
+        }
     }
 }

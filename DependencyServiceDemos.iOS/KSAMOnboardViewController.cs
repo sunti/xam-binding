@@ -10,7 +10,7 @@ namespace DependencyServiceDemos.iOS
 
         public KSAMOnboardViewController() : base("KSAMOnboardViewController", null)
         {
-            var props = new NSDictionary();
+            var props = new NSDictionary(new NSString("userID"), new NSString("44334345"), new NSString("money"), 666 );
             var options = new NSDictionary();
 
             var url = NSBundle.MainBundle.GetUrlForResource("main", "jsbundle");
