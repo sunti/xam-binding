@@ -5,10 +5,6 @@
 // Once you've added your static library or framework, right-click the library or
 // framework and select "Properties" to change the LinkWith values.
 
-//using ObjCRuntime;
-
-//[assembly: LinkWith ("libPods-KbankOnboarding.a", SmartLink = true, ForceLoad = true)]
-
 using ObjCRuntime;
 
 [assembly: LinkWith("libPods-KbankOnboarding.a",

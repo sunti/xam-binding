@@ -38,9 +38,6 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="libPods-KbankOnboarding.linkwith.cs">
-      <DependentUpon>libPods-KbankOnboarding.a</DependentUpon>
-    </Compile>
     <Compile Include="RNReanimated\libRNReanimated.linkwith.cs">
       <DependentUpon>libRNReanimated.a</DependentUpon>
     </Compile>
@@ -82,9 +79,6 @@
     </Compile>
     <Compile Include="libRCTWebSocket.linkwith.cs">
       <DependentUpon>libRCTWebSocket.a</DependentUpon>
-    </Compile>
-    <Compile Include="libReact.linkwith.cs">
-      <DependentUpon>libReact.a</DependentUpon>
     </Compile>
     <Compile Include="libRCTText.linkwith.cs">
       <DependentUpon>libRCTText.a</DependentUpon>
@@ -131,6 +125,12 @@
     <Compile Include="RNGestureHandler\libRNGestureHandler.linkwith.cs">
       <DependentUpon>libRNGestureHandler.a</DependentUpon>
     </Compile>
+    <Compile Include="libPods-KbankOnboarding.linkwith.cs">
+      <DependentUpon>libPods-KbankOnboarding.a</DependentUpon>
+    </Compile>
+    <Compile Include="libReact.linkwith.cs">
+      <DependentUpon>libReact.a</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
@@ -139,7 +139,6 @@
     <ObjcBindingCoreSource Include="Structs.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ObjcBindingNativeLibrary Include="libPods-KbankOnboarding.a" />
     <ObjcBindingNativeLibrary Include="RNReanimated\libRNReanimated.a" />
     <ObjcBindingNativeLibrary Include="react-native-image-resizer\libreact-native-image-resizer.a" />
     <ObjcBindingNativeLibrary Include="react-native-camera\libreact-native-camera.a" />
@@ -154,7 +153,6 @@
     <ObjcBindingNativeLibrary Include="RNCAsyncStorage\libRNCAsyncStorage.a" />
     <ObjcBindingNativeLibrary Include="RNSVG\libRNSVG.a" />
     <ObjcBindingNativeLibrary Include="libRCTWebSocket.a" />
-    <ObjcBindingNativeLibrary Include="libReact.a" />
     <ObjcBindingNativeLibrary Include="libRCTText.a" />
     <ObjcBindingNativeLibrary Include="libRCTVibration.a" />
     <ObjcBindingNativeLibrary Include="libRCTNetwork.a" />
@@ -170,6 +168,8 @@
     <ObjcBindingNativeLibrary Include="libRNSecureKeyStore.a" />
     <ObjcBindingNativeLibrary Include="libRCTBlob.a" />
     <ObjcBindingNativeLibrary Include="RNGestureHandler\libRNGestureHandler.a" />
+    <ObjcBindingNativeLibrary Include="libPods-KbankOnboarding.a" />
+    <ObjcBindingNativeLibrary Include="libReact.a" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
 </Project>
