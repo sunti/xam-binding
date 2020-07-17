@@ -147,11 +147,27 @@
   <ItemGroup />
   <ItemGroup>
     <BundleResource Include="Resources\monkeyicon.png" />
-    <BundleResource Include="Resources\assets\node_modules\react-native\Libraries\NewAppScreen\components\logo.png" />
     <BundleResource Include="Resources\main.jsbundle" />
+    <BundleResource Include="Resources\SukhumvitSet-Light.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\SukhumvitSet-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\SukhumvitSet-Thin.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\SukhumvitSet-Text.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\SukhumvitSet-Medium.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\SukhumvitSet-SemiBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\assets\" />
-    <Folder Include="Resources\assets\node_modules\" />
   </ItemGroup>
 </Project>

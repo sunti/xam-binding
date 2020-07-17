@@ -18,7 +18,7 @@ namespace DependencyServiceDemos.iOS
 
             CFunctions.RCTRegisterModule(ObjCRuntime.Class.GetHandle(typeof(KSAMOnboardModule)));
 
-            RCTRootView rootView = new RCTRootView(url, new NSString("xxxx"), props, options);
+            RCTRootView rootView = new RCTRootView(url, new NSString("KbankOnboarding"), props, options);
             base.View = rootView;
         }
 

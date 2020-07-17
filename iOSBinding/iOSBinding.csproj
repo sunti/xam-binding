@@ -38,75 +38,98 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="libPods-xxxx.linkwith.cs">
-      <DependentUpon>libPods-xxxx.a</DependentUpon>
+    <Compile Include="libPods-KbankOnboarding.linkwith.cs">
+      <DependentUpon>libPods-KbankOnboarding.a</DependentUpon>
     </Compile>
-    <Compile Include="React-RCTBlob\libReact-RCTBlob.linkwith.cs">
-      <DependentUpon>libReact-RCTBlob.a</DependentUpon>
+    <Compile Include="RNReanimated\libRNReanimated.linkwith.cs">
+      <DependentUpon>libRNReanimated.a</DependentUpon>
     </Compile>
-    <Compile Include="RCTTypeSafety\libRCTTypeSafety.linkwith.cs">
-      <DependentUpon>libRCTTypeSafety.a</DependentUpon>
+    <Compile Include="react-native-image-resizer\libreact-native-image-resizer.linkwith.cs">
+      <DependentUpon>libreact-native-image-resizer.a</DependentUpon>
     </Compile>
-    <Compile Include="DoubleConversion\libDoubleConversion.linkwith.cs">
-      <DependentUpon>libDoubleConversion.a</DependentUpon>
+    <Compile Include="react-native-camera\libreact-native-camera.linkwith.cs">
+      <DependentUpon>libreact-native-camera.a</DependentUpon>
     </Compile>
-    <Compile Include="React-RCTImage\libReact-RCTImage.linkwith.cs">
-      <DependentUpon>libReact-RCTImage.a</DependentUpon>
+    <Compile Include="Picker\libPicker.linkwith.cs">
+      <DependentUpon>libPicker.a</DependentUpon>
     </Compile>
-    <Compile Include="React-RCTText\libReact-RCTText.linkwith.cs">
-      <DependentUpon>libReact-RCTText.a</DependentUpon>
+    <Compile Include="BVLinearGradient\libBVLinearGradient.linkwith.cs">
+      <DependentUpon>libBVLinearGradient.a</DependentUpon>
     </Compile>
-    <Compile Include="Yoga\libYoga.linkwith.cs">
-      <DependentUpon>libYoga.a</DependentUpon>
+    <Compile Include="Toast\libToast.linkwith.cs">
+      <DependentUpon>libToast.a</DependentUpon>
     </Compile>
-    <Compile Include="React-Core\libReact-Core.linkwith.cs">
-      <DependentUpon>libReact-Core.a</DependentUpon>
+    <Compile Include="react-native-dragon-libs\libreact-native-dragon-libs.linkwith.cs">
+      <DependentUpon>libreact-native-dragon-libs.a</DependentUpon>
     </Compile>
-    <Compile Include="ReactCommon\libReactCommon.linkwith.cs">
-      <DependentUpon>libReactCommon.a</DependentUpon>
+    <Compile Include="react-native-simple-toast\libreact-native-simple-toast.linkwith.cs">
+      <DependentUpon>libreact-native-simple-toast.a</DependentUpon>
     </Compile>
-    <Compile Include="React-jsi\libReact-jsi.linkwith.cs">
-      <DependentUpon>libReact-jsi.a</DependentUpon>
+    <Compile Include="react-native-safe-area-context\libreact-native-safe-area-context.linkwith.cs">
+      <DependentUpon>libreact-native-safe-area-context.a</DependentUpon>
     </Compile>
-    <Compile Include="glog\libglog.linkwith.cs">
-      <DependentUpon>libglog.a</DependentUpon>
+    <Compile Include="RNDeviceInfo\libRNDeviceInfo.linkwith.cs">
+      <DependentUpon>libRNDeviceInfo.a</DependentUpon>
     </Compile>
-    <Compile Include="React-RCTNetwork\libReact-RCTNetwork.linkwith.cs">
-      <DependentUpon>libReact-RCTNetwork.a</DependentUpon>
+    <Compile Include="RNImageMarker\libRNImageMarker.linkwith.cs">
+      <DependentUpon>libRNImageMarker.a</DependentUpon>
     </Compile>
-    <Compile Include="React-cxxreact\libReact-cxxreact.linkwith.cs">
-      <DependentUpon>libReact-cxxreact.a</DependentUpon>
+    <Compile Include="RNCAsyncStorage\libRNCAsyncStorage.linkwith.cs">
+      <DependentUpon>libRNCAsyncStorage.a</DependentUpon>
     </Compile>
-    <Compile Include="FBReactNativeSpec\libFBReactNativeSpec.linkwith.cs">
-      <DependentUpon>libFBReactNativeSpec.a</DependentUpon>
+    <Compile Include="RNSVG\libRNSVG.linkwith.cs">
+      <DependentUpon>libRNSVG.a</DependentUpon>
     </Compile>
-    <Compile Include="React-RCTVibration\libReact-RCTVibration.linkwith.cs">
-      <DependentUpon>libReact-RCTVibration.a</DependentUpon>
+    <Compile Include="libRCTWebSocket.linkwith.cs">
+      <DependentUpon>libRCTWebSocket.a</DependentUpon>
     </Compile>
-    <Compile Include="React-RCTAnimation\libReact-RCTAnimation.linkwith.cs">
-      <DependentUpon>libReact-RCTAnimation.a</DependentUpon>
+    <Compile Include="libReact.linkwith.cs">
+      <DependentUpon>libReact.a</DependentUpon>
     </Compile>
-    <Compile Include="React-RCTLinking\libReact-RCTLinking.linkwith.cs">
-      <DependentUpon>libReact-RCTLinking.a</DependentUpon>
+    <Compile Include="libRCTText.linkwith.cs">
+      <DependentUpon>libRCTText.a</DependentUpon>
     </Compile>
-    <Compile Include="React-RCTActionSheet\libReact-RCTActionSheet.linkwith.cs">
-      <DependentUpon>libReact-RCTActionSheet.a</DependentUpon>
+    <Compile Include="libRCTVibration.linkwith.cs">
+      <DependentUpon>libRCTVibration.a</DependentUpon>
     </Compile>
-    <Compile Include="React-jsinspector\libReact-jsinspector.linkwith.cs">
-      <DependentUpon>libReact-jsinspector.a</DependentUpon>
+    <Compile Include="libRCTNetwork.linkwith.cs">
+      <DependentUpon>libRCTNetwork.a</DependentUpon>
     </Compile>
-    <Compile Include="React-jsiexecutor\libReact-jsiexecutor.linkwith.cs">
-      <DependentUpon>libReact-jsiexecutor.a</DependentUpon>
+    <Compile Include="libRCTWKWebView.linkwith.cs">
+      <DependentUpon>libRCTWKWebView.a</DependentUpon>
     </Compile>
-    <Compile Include="React-RCTSettings\libReact-RCTSettings.linkwith.cs">
-      <DependentUpon>libReact-RCTSettings.a</DependentUpon>
+    <Compile Include="libRCTImage.linkwith.cs">
+      <DependentUpon>libRCTImage.a</DependentUpon>
     </Compile>
-    <Compile Include="Folly\libFolly.linkwith.cs">
-      <DependentUpon>libFolly.a</DependentUpon>
+    <Compile Include="libRCTGeolocation.linkwith.cs">
+      <DependentUpon>libRCTGeolocation.a</DependentUpon>
     </Compile>
-    <Compile Include="React-CoreModules\libReact-CoreModules.linkwith.cs">
-      <DependentUpon>libReact-CoreModules.a</DependentUpon>
+    <Compile Include="libRCTActionSheet.linkwith.cs">
+      <DependentUpon>libRCTActionSheet.a</DependentUpon>
+    </Compile>
+    <Compile Include="libRCTLinking.linkwith.cs">
+      <DependentUpon>libRCTLinking.a</DependentUpon>
+    </Compile>
+    <Compile Include="libRCTAnimation.linkwith.cs">
+      <DependentUpon>libRCTAnimation.a</DependentUpon>
+    </Compile>
+    <Compile Include="libRCTSettings.linkwith.cs">
+      <DependentUpon>libRCTSettings.a</DependentUpon>
+    </Compile>
+    <Compile Include="libRSSignatureCapture.linkwith.cs">
+      <DependentUpon>libRSSignatureCapture.a</DependentUpon>
+    </Compile>
+    <Compile Include="libART.linkwith.cs">
+      <DependentUpon>libART.a</DependentUpon>
+    </Compile>
+    <Compile Include="libRNSecureKeyStore.linkwith.cs">
+      <DependentUpon>libRNSecureKeyStore.a</DependentUpon>
+    </Compile>
+    <Compile Include="libRCTBlob.linkwith.cs">
+      <DependentUpon>libRCTBlob.a</DependentUpon>
+    </Compile>
+    <Compile Include="RNGestureHandler\libRNGestureHandler.linkwith.cs">
+      <DependentUpon>libRNGestureHandler.a</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -116,29 +139,37 @@
     <ObjcBindingCoreSource Include="Structs.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ObjcBindingNativeLibrary Include="libPods-xxxx.a" />
-    <ObjcBindingNativeLibrary Include="React-RCTBlob\libReact-RCTBlob.a" />
-    <ObjcBindingNativeLibrary Include="RCTTypeSafety\libRCTTypeSafety.a" />
-    <ObjcBindingNativeLibrary Include="DoubleConversion\libDoubleConversion.a" />
-    <ObjcBindingNativeLibrary Include="React-RCTImage\libReact-RCTImage.a" />
-    <ObjcBindingNativeLibrary Include="React-RCTText\libReact-RCTText.a" />
-    <ObjcBindingNativeLibrary Include="Yoga\libYoga.a" />
-    <ObjcBindingNativeLibrary Include="React-Core\libReact-Core.a" />
-    <ObjcBindingNativeLibrary Include="ReactCommon\libReactCommon.a" />
-    <ObjcBindingNativeLibrary Include="React-jsi\libReact-jsi.a" />
-    <ObjcBindingNativeLibrary Include="glog\libglog.a" />
-    <ObjcBindingNativeLibrary Include="React-RCTNetwork\libReact-RCTNetwork.a" />
-    <ObjcBindingNativeLibrary Include="React-cxxreact\libReact-cxxreact.a" />
-    <ObjcBindingNativeLibrary Include="FBReactNativeSpec\libFBReactNativeSpec.a" />
-    <ObjcBindingNativeLibrary Include="React-RCTVibration\libReact-RCTVibration.a" />
-    <ObjcBindingNativeLibrary Include="React-RCTAnimation\libReact-RCTAnimation.a" />
-    <ObjcBindingNativeLibrary Include="React-RCTLinking\libReact-RCTLinking.a" />
-    <ObjcBindingNativeLibrary Include="React-RCTActionSheet\libReact-RCTActionSheet.a" />
-    <ObjcBindingNativeLibrary Include="React-jsinspector\libReact-jsinspector.a" />
-    <ObjcBindingNativeLibrary Include="React-jsiexecutor\libReact-jsiexecutor.a" />
-    <ObjcBindingNativeLibrary Include="React-RCTSettings\libReact-RCTSettings.a" />
-    <ObjcBindingNativeLibrary Include="Folly\libFolly.a" />
-    <ObjcBindingNativeLibrary Include="React-CoreModules\libReact-CoreModules.a" />
+    <ObjcBindingNativeLibrary Include="libPods-KbankOnboarding.a" />
+    <ObjcBindingNativeLibrary Include="RNReanimated\libRNReanimated.a" />
+    <ObjcBindingNativeLibrary Include="react-native-image-resizer\libreact-native-image-resizer.a" />
+    <ObjcBindingNativeLibrary Include="react-native-camera\libreact-native-camera.a" />
+    <ObjcBindingNativeLibrary Include="Picker\libPicker.a" />
+    <ObjcBindingNativeLibrary Include="BVLinearGradient\libBVLinearGradient.a" />
+    <ObjcBindingNativeLibrary Include="Toast\libToast.a" />
+    <ObjcBindingNativeLibrary Include="react-native-dragon-libs\libreact-native-dragon-libs.a" />
+    <ObjcBindingNativeLibrary Include="react-native-simple-toast\libreact-native-simple-toast.a" />
+    <ObjcBindingNativeLibrary Include="react-native-safe-area-context\libreact-native-safe-area-context.a" />
+    <ObjcBindingNativeLibrary Include="RNDeviceInfo\libRNDeviceInfo.a" />
+    <ObjcBindingNativeLibrary Include="RNImageMarker\libRNImageMarker.a" />
+    <ObjcBindingNativeLibrary Include="RNCAsyncStorage\libRNCAsyncStorage.a" />
+    <ObjcBindingNativeLibrary Include="RNSVG\libRNSVG.a" />
+    <ObjcBindingNativeLibrary Include="libRCTWebSocket.a" />
+    <ObjcBindingNativeLibrary Include="libReact.a" />
+    <ObjcBindingNativeLibrary Include="libRCTText.a" />
+    <ObjcBindingNativeLibrary Include="libRCTVibration.a" />
+    <ObjcBindingNativeLibrary Include="libRCTNetwork.a" />
+    <ObjcBindingNativeLibrary Include="libRCTWKWebView.a" />
+    <ObjcBindingNativeLibrary Include="libRCTImage.a" />
+    <ObjcBindingNativeLibrary Include="libRCTGeolocation.a" />
+    <ObjcBindingNativeLibrary Include="libRCTActionSheet.a" />
+    <ObjcBindingNativeLibrary Include="libRCTLinking.a" />
+    <ObjcBindingNativeLibrary Include="libRCTAnimation.a" />
+    <ObjcBindingNativeLibrary Include="libRCTSettings.a" />
+    <ObjcBindingNativeLibrary Include="libRSSignatureCapture.a" />
+    <ObjcBindingNativeLibrary Include="libART.a" />
+    <ObjcBindingNativeLibrary Include="libRNSecureKeyStore.a" />
+    <ObjcBindingNativeLibrary Include="libRCTBlob.a" />
+    <ObjcBindingNativeLibrary Include="RNGestureHandler\libRNGestureHandler.a" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
 </Project>
